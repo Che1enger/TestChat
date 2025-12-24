@@ -38,7 +38,7 @@ const singleImage = computed(() => (images.value.length === 1 ? images.value[0] 
         </div>
       </div>
     </div>
->
+
     <div v-if="singleImage && videos.length === 0" class="single-image">
       <div class="image-message">
         <div class="image-frame">
