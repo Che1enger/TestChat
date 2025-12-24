@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TextMessage } from '../../types/messages'
-import '../../styles/TextMessage.css'
 
 defineProps<{
   message: TextMessage
@@ -12,4 +11,8 @@ defineProps<{
     {{ message.text }}
   </p>
 </template>
+
+<style>
+@import '../../styles/TextMessage.css';
+</style>
 

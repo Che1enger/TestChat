@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { VideoMessage } from '../../types/messages'
-import '../../styles/VideoMessage.css'
 
 defineProps<{
   message: VideoMessage
@@ -22,3 +21,7 @@ defineProps<{
     </p>
   </div>
 </template>
+
+<style>
+@import '../../styles/VideoMessage.css';
+</style>

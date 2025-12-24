@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, nextTick } from 'vue'
 import type { ImageMessage } from '../../types/messages'
-import '../../styles/ImageMessage.css'
 
 const props = defineProps<{
   message: ImageMessage
@@ -53,4 +52,8 @@ onMounted(() => {
     </p>
   </div>
 </template>
+
+<style>
+@import '../../styles/ImageMessage.css';
+</style>
 

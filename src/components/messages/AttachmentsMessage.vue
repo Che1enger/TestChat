@@ -2,8 +2,6 @@
 import { computed } from 'vue'
 import type { AttachmentsMessage } from '../../types/messages'
 import PdfIcon from '../../icons/pdf_icon.svg'
-import '../../styles/AttachmentsMessage.css'
-import '../../styles/ImageMessage.css'
 
 const props = defineProps<{
   message: AttachmentsMessage
@@ -115,5 +113,10 @@ const singleImage = computed(() => (images.value.length === 1 ? images.value[0] 
     </div>
   </div>
 </template>
+
+<style>
+@import '../../styles/AttachmentsMessage.css';
+@import '../../styles/ImageMessage.css';
+</style>
 
 

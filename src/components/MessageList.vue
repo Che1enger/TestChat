@@ -2,7 +2,6 @@
 import type { Message } from '../types/messages'
 import { useMessageRegistry } from '../composables/useMessageRegistry'
 import CheckIcon from '../icons/Galochka.svg'
-import '../styles/MessageList.css'
 
 const isOnlyFiles = (message: Message) =>
   message.kind === 'attachments' &&
@@ -114,4 +113,8 @@ const wasLoadedOnScroll = (messageId: string) => {
     <div class="message-list-spacer"></div>
   </div>
 </template>
+
+<style>
+@import '../styles/MessageList.css';
+</style>
 

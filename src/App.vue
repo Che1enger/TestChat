@@ -5,7 +5,6 @@ import MessageList from './components/MessageList.vue'
 import { generateMockMessages } from './mock/messages'
 import type { Message, NewMessageInput } from './types/messages'
 import SearchIcon from './icons/Search.svg'
-import './styles/App.css'
 
 // Debounce utility function for performance optimization
 const debounce = <T extends (...args: any[]) => any>(
@@ -292,4 +291,8 @@ onUnmounted(() => {
     </div>
   </main>
 </template>
+
+<style>
+@import './styles/App.css';
+</style>
 

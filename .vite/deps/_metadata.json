@@ -1,0 +1,21 @@
+{
+  "hash": "7f39ea26",
+  "configHash": "3bf7453c",
+  "lockfileHash": "359f4908",
+  "browserHash": "de62623e",
+  "optimized": {
+    "@faker-js/faker": {
+      "src": "../../node_modules/@faker-js/faker/dist/index.js",
+      "file": "@faker-js_faker.js",
+      "fileHash": "b018f5bb",
+      "needsInterop": false
+    },
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "5bca08f6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

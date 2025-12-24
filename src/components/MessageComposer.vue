@@ -4,7 +4,6 @@ import type { MessageAttachment, NewMessageInput } from '../types/messages'
 import PlusIcon from '../icons/Plus.svg'
 import WhatsupIcon from '../icons/Whatsup.svg'
 import PdfIcon from '../icons/pdf_icon.svg'
-import '../styles/MessageComposer.css'
 
 const emit = defineEmits<{
   send: [payload: NewMessageInput]
@@ -233,4 +232,8 @@ onMounted(() => nextTick(resize))
     </div>
   </form>
 </template>
+
+<style>
+@import '../styles/MessageComposer.css';
+</style>
 
