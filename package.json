@@ -1,0 +1,22 @@
+{
+  "name": "testtask",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vue-tsc": "^3.2.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "vue": "^3.5.26"
+  }
+}

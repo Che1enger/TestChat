@@ -1,0 +1,47 @@
+.image-message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  width: 100%;
+}
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #dcdfe3;
+  min-height: 176px;
+}
+
+.image-frame img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-frame img.hidden {
+  display: none;
+}
+
+.image-skeleton {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #535a60;
+}
+
+.caption {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  color: #2d3135;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+

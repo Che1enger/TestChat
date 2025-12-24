@@ -1,0 +1,133 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.frame {
+  position: relative;
+  margin: 0 auto;
+  width: 1366px;
+  min-height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6f8;
+}
+
+.chat-card {
+  width: 430px;
+  background: #ffffff;
+  border: 1px solid #c3c7cb;
+  border-radius: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: min(923px, 100vh);
+  max-height: 100vh;
+  box-shadow: none;
+  overflow: hidden; 
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 16px;
+  height: 52px;
+  border-bottom: 1px solid #c3c7cb;
+  background: #ffffff;
+}
+
+.chat-header .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #2d3135;
+}
+
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: #535a60;
+  cursor: pointer;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.messages-panel {
+  padding: 24px;
+  background: #ffffff;
+  border-top: 1px solid #c3c7cb;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  min-height: 0; 
+  flex: 1; 
+}
+
+.messages-panel::-webkit-scrollbar {
+  width: 3px;
+}
+
+.messages-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-panel::-webkit-scrollbar-thumb {
+  background: #c3c7cb;
+  border-radius: 4px;
+}
+
+.messages-panel::-webkit-scrollbar-thumb:hover {
+  background: #a6acb2;
+}
+
+.messages-panel::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 0;
+  }
+
+  .frame {
+    width: 100%;
+    min-height: 100vh;
+    align-items: stretch;
+  }
+
+  .chat-card {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+  }
+
+  .messages-panel {
+    padding: 16px 12px;
+    justify-content: stretch;
+  }
+}
+

@@ -1,0 +1,12 @@
+.text-message {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  color: #2d3135;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
